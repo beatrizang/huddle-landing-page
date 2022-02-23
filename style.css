@@ -71,7 +71,7 @@ button{
     background-color: white;
     color: var(--violet);
     border: none;
-    padding: 0.8em 1em 0.8em 1em;
+    padding: 1em;
     width: 14em;
     font-family: 'Poppins', sans-serif;
     border-radius: 60px 60px 60px 60px / 70px 70px 70px 70px;

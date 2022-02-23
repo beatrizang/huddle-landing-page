@@ -1,0 +1,154 @@
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    color: white
+}
+
+a:hover{
+    text-decoration: none;
+    color: var(--soft-magenta);
+}
+
+header{
+    margin-top: 1em;
+    margin-bottom: 2em;
+    margin-left: 5em;
+    
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+ 
+    background-image: url("images/bg-desktop.svg");
+    background-color: var(--violet);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+}
+
+.content{
+    display: flex;
+    color: white;
+    justify-content: center;
+    padding-left: 1em;
+}
+
+.img-ppal{
+    transform: scale(0.8);
+}
+
+.text{
+    padding: 5em;
+}
+
+.text h1{
+    padding-bottom: 0.6em;
+}
+
+.text p{
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+button{
+    background-color: white;
+    color: var(--violet);
+    border: none;
+    padding: 0.8em 1em 0.8em 1em;
+    width: 14em;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 60px 60px 60px 60px / 70px 70px 70px 70px;
+    margin-top: 1em;
+    box-shadow: 20px 20px 28px -17px black;
+}
+
+button:hover{
+    background-color: var(--soft-magenta);
+    cursor: pointer;
+    color: white;
+}
+
+.social-media{
+    display: flex;
+    margin-right: 7em;
+    justify-content: end;
+}
+
+.icon{
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 0.6em;
+    margin: 0.5em;
+}
+
+.icon:hover{
+    color: var(--soft-magenta);
+    cursor: pointer;
+    border: 1px solid var(--soft-magenta);
+}
+
+
+.facebook{
+    padding-left:  0.8em;
+    padding-right:  0.8em;
+}
+
+.instagram{
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+}
+
+footer{
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1260px){
+    header{
+        margin-left: 0;
+    }
+    body{
+        background-image: url("images/bg-mobile.svg");
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+    .container{
+        align-items: center;
+        
+    }
+    .img-ppal{
+        width: 100%;
+    }
+
+    .text{
+        padding: 3.5em;
+        text-align: center;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-media{
+        justify-content: center;
+        margin-right: 0;
+    }
+}

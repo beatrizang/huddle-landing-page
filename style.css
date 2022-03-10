@@ -34,7 +34,8 @@ body{
     align-items: center;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
- 
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: url("images/bg-desktop.svg");
     background-color: var(--violet);
 }
